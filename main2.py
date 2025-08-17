@@ -10,9 +10,9 @@ swe.set_sid_mode(swe.SIDM_LAHIRI)
 
 # Burmese Rāśi names
 rasi_names_mm = [
-    "မိဿ", "ဝෘရှဗ", "မိถุน", "ကရက",
-    "သင်္ဟ", "ကန်ညာ", "တူလာ", "ဝෘရှ်ချိက",
-    "ဓနု", "မကရ", "ကုမ္ဘ", "မိန"
+    "မိဿ", "ပြိဿ", "မေထုန်", "ကရကဋ်",
+    "သိဟ်", "ကန်", "တူ", "ဗြိစ္ဆာ",
+    "ဓနု", "မကာရ", "ကုမ်", "မိန်"
 ]
 
 def convert_to_rasi(degree):
@@ -35,17 +35,17 @@ def calculate_chart():
     jd = swe.julday(year, month, day, ut - tz_offset)
 
     planets = {
-        "နေ": swe.SUN,
-        "လ": swe.MOON,
-        "မာသ": swe.MARS,
-        "ဗုဒ္ဓ": swe.MERCURY,
-        "ကြာ": swe.JUPITER,
-        "စနစ်": swe.VENUS,
-        "သန": swe.SATURN,
-        "ဥရာနပ်": swe.URANUS,
-        "နက်ပျူန်": swe.NEPTUNE,
-        "ပလူတို": swe.PLUTO,
-        "ရာဟု": swe.MEAN_NODE
+        "၁": swe.SUN,
+        "၂": swe.MOON,
+        "၃": swe.MARS,
+        "၄": swe.MERCURY,
+        "၅": swe.JUPITER,
+        "၆": swe.VENUS,
+        "၀": swe.SATURN,
+        "U": swe.URANUS,
+        "N": swe.NEPTUNE,
+        "P": swe.PLUTO,
+        "၈": swe.MEAN_NODE
     }
 
     output.delete(1.0, tk.END)
