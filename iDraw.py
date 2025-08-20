@@ -18,6 +18,8 @@ class ExampleApp:
         grid1 = BurmeseGrid(example1_frame, width=250, height=250)
         grid1.draw_grid("ရာသီ").pack(pady=10)
     
+      
+    
 if __name__ == "__main__":
     root = tk.Tk()
     app = ExampleApp(root)
