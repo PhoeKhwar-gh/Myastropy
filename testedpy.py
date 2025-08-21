@@ -77,7 +77,7 @@ class CityGeoApp:
         except Exception as e:
             messagebox.showerror("API Error", f"Failed to fetch geolocation: {str(e)}")
             return None
-    
+  #Widget Call လုပ်ဖို့ရန်  
     def create_widgets(self):
         """Create all GUI elements"""
         # Main frame
